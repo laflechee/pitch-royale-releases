@@ -2,27 +2,28 @@
 
 Installers for **[Pitch Royale](https://pitch.ac)**, the classic 4-point card game.
 
-Grab the latest version from the [Releases page](https://github.com/laflechee/pitch-royale-releases/releases/latest):
+Always-current download links:
 
-- **Mac (Apple Silicon)** — `.dmg` for M1/M2/M3/M4 Macs
-- **Mac (Intel)** — `.dmg` for Intel Macs
-- **Windows** — `.exe` installer
+- **Mac (Apple Silicon):** [PitchRoyale-mac-arm64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-mac-arm64.dmg)
+- **Mac (Intel):** [PitchRoyale-mac-x64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-mac-x64.dmg)
+- **Windows:** [PitchRoyale-Setup.exe](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-Setup.exe)
 
-## Mac: "Pitch Royale is damaged and can't be opened"
+## Mac: "Apple could not verify…"
 
-The app isn't damaged — it just isn't code-signed yet, and macOS blocks unsigned apps downloaded from a browser. To open it:
+The app isn't code-signed with an Apple Developer ID yet, so macOS asks before the first launch:
 
-1. Open the `.dmg` and drag **Pitch Royale** into **Applications** as usual.
-2. Open **Terminal** (Cmd-Space, type "Terminal") and paste:
-   ```
-   xattr -cr "/Applications/Pitch Royale.app"
-   ```
-3. Open Pitch Royale from Applications. You only need to do this once — updates arrive automatically after that.
+1. Open the `.dmg` and drag **Pitch Royale** into **Applications**.
+2. Open the app once — when the dialog appears, click **Done** (not Move to Trash).
+3. Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
+
+You only do this once. (On older macOS you can simply right-click the app and choose **Open**.)
+
+> Using v1.0.0? That build shows "app is damaged" instead — download the latest version above, or run `xattr -cr "/Applications/Pitch Royale.app"` in Terminal.
 
 ## Windows: SmartScreen warning
 
 Click **More info → Run anyway**. Same reason — the installer isn't code-signed yet.
 
-Code signing for both platforms is planned; these warnings will disappear in a future release.
+Code signing for both platforms is planned; these prompts will disappear in a future release.
 
 Or skip installs entirely and play in your browser at **[pitch.ac](https://pitch.ac)**.
