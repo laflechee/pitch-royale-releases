@@ -1,24 +1,24 @@
-# Pitch Royale — Desktop Downloads
+# Pitch Online — Desktop Downloads
 
-Installers for **[Pitch Royale](https://pitch.ac)**, the classic 4-point card game.
+Installers for **[Pitch Online](https://pitch.ac)** (formerly Pitch Royale), the classic 4-point card game.
 
 Always-current download links:
 
-- **Mac (Apple Silicon):** [PitchRoyale-mac-arm64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-mac-arm64.dmg)
-- **Mac (Intel):** [PitchRoyale-mac-x64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-mac-x64.dmg)
-- **Windows:** [PitchRoyale-Setup.exe](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchRoyale-Setup.exe)
+- **Mac (Apple Silicon):** [PitchOnline-mac-arm64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchOnline-mac-arm64.dmg)
+- **Mac (Intel):** [PitchOnline-mac-x64.dmg](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchOnline-mac-x64.dmg)
+- **Windows:** [PitchOnline-Setup.exe](https://github.com/laflechee/pitch-royale-releases/releases/latest/download/PitchOnline-Setup.exe)
 
 ## Mac: "Apple could not verify…"
 
 The app isn't code-signed with an Apple Developer ID yet, so macOS asks before the first launch:
 
-1. Open the `.dmg` and drag **Pitch Royale** into **Applications**.
+1. Open the `.dmg` and drag **Pitch Online** into **Applications**.
 2. Open the app once — when the dialog appears, click **Done** (not Move to Trash).
 3. Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
 
 You only do this once. (On older macOS you can simply right-click the app and choose **Open**.)
 
-> Using v1.0.0? That build shows "app is damaged" instead — download the latest version above, or run `xattr -cr "/Applications/Pitch Royale.app"` in Terminal.
+> Have the old "Pitch Royale" v1.0.0 that says "app is damaged"? Download the latest version above, or run `xattr -cr "/Applications/Pitch Royale.app"` in Terminal.
 
 ## Windows: SmartScreen warning
 
